@@ -11,6 +11,10 @@
 
 from shapely.geometry import Point, LineString, Polygon
 #YOUR CODE HERE 1 to define create_point_geom()
+def create_point_geom(x_coord,y_coord):
+ point = Point(x_coord,y_coord)
+
+ return point
 
 # Test your function by running these code cells:
 
@@ -27,12 +31,15 @@ print(point1.geom_type)
 # 
 
 # YOUR CODE HERE 2 to define create_line_geom()
+def create_line_geom(Point1,Point2):
+ line = LineString([Point1,Point2])
 
+ return line
 # Demonstrate the usage of your function; For example, create a line object with two points: `Point(45.2, 22.34)` & `Point(100.22, -3.20)` and store the result in a variable called `line1`:
 
 line1 = None
 # YOUR CODE HERE 3 to define two points and store the result in line1
-
+line1 = create_line_geom([Point(45.2, 22.34),Point(100.22, -3.20)])
 
 # CODE FOR TESTING YOUR SOLUTION
 print(line1)
@@ -67,7 +74,7 @@ except Exception as e:
 # Demonstrate the usage of the function. For example, create a Polygon with three points: `(45.2, 22.34)`, `(100.22, -3.20)` & `(70.0, 10.20)`.
 
 # YOUR CODE HERE 5 to define poly1 with three points
-poly1 = 
+
 
 # CODE FOR TESTING YOUR SOLUTION
 print(poly1)
