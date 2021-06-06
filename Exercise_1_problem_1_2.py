@@ -107,12 +107,14 @@ except Exception as e:
 # 
 
 #  YOUR CODE HERE 6 to define get_centroid()
+def get_centroid(geom):
 
+  return geom.centriod
 # Test and demonstrate the usage of the function. You can, for example, create shapely objects using the functions you created in problem 1 and print out information about their centroids:
 # 
 
 #  YOUR CODE HERE 7 to define some objects
-
+poly1=get_centroid[(45.2, 22.34),(100.22, -3.20),(70.0, 10.20)]
 
 # CODE FOR TESTING YOUR SOLUTION
 centroid = get_centroid(poly1)
